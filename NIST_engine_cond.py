@@ -94,9 +94,9 @@ if __name__ == '__main__':
     stdout.flush()
 
     pp = treesPaths(hrmult(uu2,df21,hr1))
-    bmwrite(model+".bmp",ppbm2(uu,vvk,28,1,2,pp))
-    bmwrite(model+"_1.bmp",ppbm(uu,vvk,28,1,2,pp))
-    bmwrite(model+"_2.bmp",ppbm(uu,vvk,28,2,2,pp))
+    bmwrite(model+".bmp",ppbm2(uu,vvk,28,1,valency,pp))
+    bmwrite(model+"_1.bmp",ppbm(uu,vvk,28,1,valency,pp))
+    bmwrite(model+"_2.bmp",ppbm(uu,vvk,28,2,valency,pp))
 
     t2 = timer()
     print("<<< done %.3fs" % (t2-t1))
